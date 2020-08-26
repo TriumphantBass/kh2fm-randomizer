@@ -154,12 +154,12 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 						boss.description.includes("AS Fight")
 					)
 						return false;
-						if (
-							configuration.include.dataOrganizationXIII !==
-								RandomizingAction.RANDOMIZE &&
-							boss.location.includes("Data Fight")
-						)
-							return false;
+					if (
+						configuration.include.dataOrganizationXIII !==
+							RandomizingAction.RANDOMIZE &&
+						boss.description.includes("Data Fight")
+					)
+						return false;
 		
 					if (
 						configuration.include.terra === Toggle.OFF &&
